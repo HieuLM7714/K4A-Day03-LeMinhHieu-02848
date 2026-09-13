@@ -3,9 +3,9 @@
     "step": 1,
     "query": "Chào bạn, bạn có thể giới thiệu quy chế học vụ cơ bản của Đại học VinUni không?",
     "action_type": "FINAL_ANSWER",
-    "thought": "Câu hỏi chung về quy chế học vụ, trả lời trực tiếp không cần gọi Tool.",
-    "output": "[Mock Agent Response]: Xin chào! Quy chế học vụ VinUni yêu cầu sinh viên tích lũy tối thiểu 120 tín chỉ và duy trì GPA trên 2.0 để tốt nghiệp.",
-    "latency_ms": 2845.93
+    "thought": "Gemini phản hồi trực tiếp bằng văn bản (không cần gọi công cụ).",
+    "output": "Chào bạn! Là Trợ lý Học vụ Thông minh của Đại học VinUni, tôi rất vui được giới thiệu đến bạn những điểm cơ bản và quan trọng nhất trong Quy chế Học vụ của trường chúng ta:\n\n### 1. Hệ thống Tín chỉ & Đăng ký Môn học\n*   **Đơn vị học trình:** VinUni áp dụng hệ thống đào tạo theo tín chỉ. Mỗi môn học sẽ có số lượng tín chỉ tương ứng (thường từ 1 đến 4 tín chỉ).\n*   **Đăng ký môn học:** Sinh viên chủ động đăng ký môn học trước mỗi học kỳ thông qua hệ thống quản lý học tập (Self-Service/Banner). Bạn cần lưu ý các môn học tiên quyết (Prerequisite) trước khi đăng ký môn học tiếp theo.\n*   **Thời gian học tập:** Chương trình Cử nhân thường kéo dài từ 3 đến 4 năm (tùy ngành), và chương trình Bác sĩ Y khoa kéo dài 6 năm.\n\n### 2. Hệ thống Đánh giá & Thang điểm\n*   **Thang điểm chữ (Letter Grade):** Kết quả học tập được đánh giá bằng điểm chữ từ A (Xuất sắc) đến F (Không đạt).\n*   **Điểm trung bình tích lũy (GPA):** Được tính theo thang điểm 4.0. \n    *   **GPA Học kỳ (Semester GPA):** Điểm trung bình của các môn trong một học kỳ.\n    *   **GPA Tích lũy (Cumulative GPA - CGPA):** Điểm trung bình của tất cả các môn đã học từ đầu khóa.\n\n### 3. Tình trạng Học vụ (Academic Standing)\nĐể đảm bảo chất lượng đào tạo, VinUni giám sát chặt chẽ kết quả học tập của sinh viên:\n*   **Tình trạng Tốt (Good Standing):** Sinh viên duy trì CGPA từ 2.0/4.0 trở lên.\n*   **Cảnh cáo học vụ (Academic Probation):** Nếu CGPA của bạn giảm xuống dưới 2.0, bạn sẽ bị đặt vào tình trạng cảnh cáo học vụ và cần làm việc chặt chẽ với Cố vấn Học tập để cải thiện điểm số.\n*   **Đình chỉ/Buộc thôi học:** Áp dụng nếu sinh viên không cải thiện được kết quả học tập sau thời gian cảnh cáo học vụ theo quy định.\n\n### 4. Điều kiện Tốt nghiệp\nĐể được xét công nhận tốt nghiệp, sinh viên cần:\n*   Tích lũy đủ số tín chỉ yêu cầu của chương trình đào tạo.\n*   Đạt điểm CGPA tối thiểu từ 2.0/4.0 trở lên.\n*   Hoàn thành đầy đủ các nghĩa vụ học phí và các yêu cầu bắt buộc khác (như Giáo dục Quốc phòng - An ninh, Giáo dục Thể chất, các hoạt động ngoại khóa/phục vụ cộng đồng nếu có).\n*   Đạt chuẩn đầu ra về năng lực ngoại ngữ (Tiếng Anh) theo quy định của trường.\n\n### 5. Vai trò của Cố vấn Học tập (Academic Advisor)\nMỗi sinh viên VinUni đều được phân công một **Cố vấn Học tập** là các Giáo sư, Giảng viên giàu kinh nghiệm. Cố vấn sẽ đồng hành cùng bạn để:\n*   Tư vấn lộ trình học tập, lựa chọn môn học/ngành phụ (Minor).\n*   Hỗ trợ khi bạn gặp khó khăn trong học tập hoặc khi rơi vào tình trạng cảnh cáo học vụ.\n\n---\n*Nếu bạn đã là sinh viên của VinUni và muốn tra cứu hồ sơ học tập cá nhân hoặc đặt lịch hẹn với Cố vấn Học tập, vui lòng cung cấp **Mã sinh viên (ví dụ: SV2026001)** để tôi có thể hỗ trợ bạn nhanh nhất nhé!*",
+    "latency_ms": 7354.62
   },
   {
     "step": 1,
@@ -15,15 +15,106 @@
     "arguments": {
       "student_id": "SV2026001"
     },
-    "observation": {},
-    "latency_ms": 799.12
+    "observation": {
+      "status": "SUCCESS",
+      "student_id": "SV2026001",
+      "data": {
+        "full_name": "Nguyễn Văn An",
+        "class": "AI-K4",
+        "gpa": 3.85,
+        "email": "an.nv@vinuni.edu.vn",
+        "status": "Đang học",
+        "advisor": "PGS.TS Nguyễn Văn A"
+      }
+    },
+    "latency_ms": 1754.06
   },
   {
     "step": 2,
     "query": "Hãy tra cứu thông tin học vụ của sinh viên SV2026001.",
     "action_type": "FINAL_ANSWER",
     "thought": "Tổng hợp kết quả từ MCP Server thành công.",
-    "output": "Chưa thể trả lời chi tiết do chưa nhận được dữ liệu từ MCP Server (hãy hoàn thành TODO 2.1).",
+    "output": "Kết quả tra cứu cho sinh viên SV2026001 (Nguyễn Văn An): Lớp AI-K4, GPA: 3.85, Email: an.nv@vinuni.edu.vn, Trạng thái: Đang học, Cố vấn: PGS.TS Nguyễn Văn A.",
+    "latency_ms": 10.0
+  },
+  {
+    "step": 1,
+    "query": "Tôi là sinh viên SV2026001, nhờ bạn đặt giúp tôi một lịch hẹn tư vấn học vụ với PGS.TS Nguyễn Văn A vào lúc 14:00 ngày 15/09/2026.",
+    "action_type": "TOOL_EXECUTION",
+    "tool_name": "schedule_appointment",
+    "arguments": {
+      "datetime_str": "14:00 15/09/2026",
+      "student_id": "SV2026001",
+      "advisor_name": "PGS.TS Nguyễn Văn A"
+    },
+    "observation": {
+      "status": "SUCCESS",
+      "booking_id": "BK-SV2026001-99",
+      "student_id": "SV2026001",
+      "datetime": "14:00 15/09/2026",
+      "advisor": "PGS.TS Nguyễn Văn A",
+      "message": "Đặt lịch thành công cho sinh viên SV2026001 với PGS.TS Nguyễn Văn A vào lúc 14:00 15/09/2026."
+    },
+    "latency_ms": 2304.31
+  },
+  {
+    "step": 2,
+    "query": "Tôi là sinh viên SV2026001, nhờ bạn đặt giúp tôi một lịch hẹn tư vấn học vụ với PGS.TS Nguyễn Văn A vào lúc 14:00 ngày 15/09/2026.",
+    "action_type": "FINAL_ANSWER",
+    "thought": "Tổng hợp kết quả từ MCP Server thành công.",
+    "output": "Đặt lịch thành công cho sinh viên SV2026001 với PGS.TS Nguyễn Văn A vào lúc 14:00 15/09/2026.",
+    "latency_ms": 10.0
+  },
+  {
+    "step": 1,
+    "query": "Tôi là sinh viên SV2026002. Hãy kiểm tra xem ai đang là cố vấn học tập của tôi, sau đó đặt lịch hẹn tư vấn học vụ với thầy/cô đó vào lúc 09:30 ngày 18/09/2026.",
+    "action_type": "TOOL_EXECUTION",
+    "tool_name": "academic_query",
+    "arguments": {
+      "student_id": "SV2026002"
+    },
+    "observation": {
+      "status": "SUCCESS",
+      "student_id": "SV2026002",
+      "data": {
+        "full_name": "Trần Thị Bình",
+        "class": "AI-K4",
+        "gpa": 3.6,
+        "email": "binh.tt@vinuni.edu.vn",
+        "status": "Đang học",
+        "advisor": "TS. Lê Thị B"
+      }
+    },
+    "latency_ms": 1916.13
+  },
+  {
+    "step": 2,
+    "query": "Tôi là sinh viên SV2026002. Hãy kiểm tra xem ai đang là cố vấn học tập của tôi, sau đó đặt lịch hẹn tư vấn học vụ với thầy/cô đó vào lúc 09:30 ngày 18/09/2026.",
+    "action_type": "FINAL_ANSWER",
+    "thought": "Tổng hợp kết quả từ MCP Server thành công.",
+    "output": "Kết quả tra cứu cho sinh viên SV2026002 (Trần Thị Bình): Lớp AI-K4, GPA: 3.6, Email: binh.tt@vinuni.edu.vn, Trạng thái: Đang học, Cố vấn: TS. Lê Thị B.",
+    "latency_ms": 10.0
+  },
+  {
+    "step": 1,
+    "query": "Bạn kiểm tra giúp tôi hồ sơ học vụ và điểm số của sinh viên có mã SV9999999 nhé.",
+    "action_type": "TOOL_EXECUTION",
+    "tool_name": "academic_query",
+    "arguments": {
+      "student_id": "SV9999999"
+    },
+    "observation": {
+      "status": "NOT_FOUND",
+      "message": "Không tìm thấy dữ liệu sinh viên có mã 'SV9999999'"
+    },
+    "latency_ms": 2765.31
+  },
+  {
+    "step": 2,
+    "query": "Bạn kiểm tra giúp tôi hồ sơ học vụ và điểm số của sinh viên có mã SV9999999 nhé.",
+    "action_type": "FINAL_ANSWER",
+    "thought": "Tổng hợp kết quả từ MCP Server thành công.",
+    "output": "Không tìm thấy dữ liệu sinh viên có mã 'SV9999999'",
     "latency_ms": 10.0
   }
 ]
